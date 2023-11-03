@@ -85,7 +85,7 @@ namespace User.Management.Service.Data_Access_Layer__DAL_.Context
                 {
                     ProductCode = Guid.NewGuid().ToString(),
                     Name = "pants",
-                    ImgUrl = "img1.jpg",
+                    ImgUrl = "assets/Images/PantsImg.webp",
                     price = 100,
                     Discount_Rate = 0.1M,
                     CategoryId = 2,
@@ -95,12 +95,14 @@ namespace User.Management.Service.Data_Access_Layer__DAL_.Context
                 {
                     ProductCode = Guid.NewGuid().ToString(),
                     Name = "mobile",
-                    ImgUrl = "img2.jpg",
+                    ImgUrl = "assets/Images/MobileImg.jpeg",
                     price = 4000,
-                    Discount_Rate = .2M,
+                    Discount_Rate = 0.2M,
                     CategoryId = 1,
                     Minimum_Quantity = 1000,
                 },
+              
+
                
             };
 

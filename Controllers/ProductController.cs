@@ -34,7 +34,20 @@ namespace E_Commerce_Project.Controllers
             });
             return Ok(ProductsDto);
 
-        }
+        } 
+        
+        
+        //[HttpPost]
+        //public async Task<IActionResult> GetAllProducts()
+        //{
+        //    var ProductEntities = await productRepository.GetAllAsync();
+        //    var ProductsDto = ProductEntities.Select(p =>
+        //    {
+        //       return p.toread();
+        //    });
+        //    return Ok(ProductsDto);
+
+        //}
 
 
 

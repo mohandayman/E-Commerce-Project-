@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using User.Management.Service.Data_Access_Layer__DAL_.Context;
 
@@ -11,9 +12,10 @@ using User.Management.Service.Data_Access_Layer__DAL_.Context;
 namespace E_Commerce_Project.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20231014125659_changImgdir2")]
+    partial class changImgdir2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -85,7 +87,7 @@ namespace E_Commerce_Project.Migrations
                     b.HasData(
                         new
                         {
-                            ProductCode = "8fff398b-22bc-40d7-b997-25ed4b3b5d0f",
+                            ProductCode = "43da1284-8fd3-46ee-b460-8f314b188733",
                             CategoryId = 2,
                             Discount_Rate = 0.1m,
                             ImgUrl = "assets/Images/PantsImg.webp",
@@ -95,7 +97,7 @@ namespace E_Commerce_Project.Migrations
                         },
                         new
                         {
-                            ProductCode = "96c01a1b-fcc2-4a57-aac0-b17834f97992",
+                            ProductCode = "3007441f-2408-4354-812d-eeda17915608",
                             CategoryId = 1,
                             Discount_Rate = 0.2m,
                             ImgUrl = "assets/Images/MobileImg.jpeg",
@@ -312,31 +314,31 @@ namespace E_Commerce_Project.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7163c008-d27d-4965-b88b-d77cb473f06c",
+                            Id = "98195a42-fa61-4b80-b98b-d6e661e49f6d",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "255238ee-0667-4555-abea-c8171528f09e",
+                            ConcurrencyStamp = "8f42d5de-12e1-4f79-9529-32394902fccb",
                             Email = "Mohandayman0127@gmail.com",
                             EmailConfirmed = false,
                             LastLoginTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEP5ai9OWWvzcrt3mdgWNi3qQMVa3iqKjuRvZOy05tS1oFrL2dvkG1E+T2pHSfK7h0Q==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEIn/myDk020SFXpUbn8OpXLiU7EQNwsMFCK0wJpA7/kALZtksF6/t3RHE9vqGmX30g==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "86b29b00-e3ae-4a73-abd6-ab4ebb6e14c6",
+                            SecurityStamp = "61b729c9-4de3-4f3a-bddf-fd230fc99c65",
                             TwoFactorEnabled = false,
                             UserName = "MohandAyman"
                         },
                         new
                         {
-                            Id = "9a91d5a4-2cd8-46af-a26a-57ca5c877b51",
+                            Id = "78c8562f-59c4-4219-9f82-1fc580dc5039",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b7676117-b7ef-46c2-9d20-3f0189d650cf",
+                            ConcurrencyStamp = "3e02fd18-0163-44c8-93bc-cd8e4ed5fc63",
                             Email = "OsamaHassan@gmail.com",
                             EmailConfirmed = false,
                             LastLoginTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEJYB7Y3JSzbm2FCjaeR3MZTvIi+0uxmb88zY/7S08BHdbkMwMBzvOtnvjzmPuxAwaA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEMUA85JJ20F/e8F/RaGo1ydgOZhXlXYjR3YqT9jMZiWFFNbgNp6VsahGjtIT9RbGrA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e73b28cb-a392-4b55-b532-49d0d3778dee",
+                            SecurityStamp = "4126e586-689f-41cc-ad9a-691115fb8cab",
                             TwoFactorEnabled = false,
                             UserName = "OsamaHassan"
                         });

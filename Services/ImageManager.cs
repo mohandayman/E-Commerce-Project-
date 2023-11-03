@@ -16,7 +16,9 @@ namespace E_Commerce_Project.Services
             {
             ".png",
             ".jpg",
-            ".svg"
+            ".svg",
+            ".webp", 
+            "jpeg"
             };
 
             bool isExtensionAllowed = allowedExtenstions.Contains(extension,
@@ -25,25 +27,13 @@ namespace E_Commerce_Project.Services
             {
                 return new UploadFileDto(false, "Extension is not valid");
             }
-
             #endregion
-
-            //#region Checking Length
-
-            //bool isSizeAllowed = file.Length is > 0 and <= 4_000_000;
-            ////bool isSizeAllowed = file.Length > 0 && file.Length <= 4_000_000;
-            //if (!isSizeAllowed)
-            //{
-            //    return BadRequest(new UploadFileDto(false, "Size is not allowed"));
-            //}
-
-            //#endregion
 
             #region Storing The Image
 
             var newFileName = $"{Guid.NewGuid()}{extension}";
             var currentDirectory = Environment.CurrentDirectory;
-            var imagesPath = Path.Combine(currentDirectory, "..", "E-commerce-FrontendE-commerce-Frontend", "src", "assets", "Images");
+            var imagesPath = Path.Combine(currentDirectory, "..", "E-commerce-Frontend", "src", "assets", "Images");
             var fullFilePath = Path.Combine(imagesPath, newFileName);
 
             using var stream = new FileStream(fullFilePath, FileMode.Create);

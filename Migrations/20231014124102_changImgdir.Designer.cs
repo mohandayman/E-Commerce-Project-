@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using User.Management.Service.Data_Access_Layer__DAL_.Context;
 
@@ -11,9 +12,10 @@ using User.Management.Service.Data_Access_Layer__DAL_.Context;
 namespace E_Commerce_Project.Migrations
 {
     [DbContext(typeof(Context))]
-    partial class ContextModelSnapshot : ModelSnapshot
+    [Migration("20231014124102_changImgdir")]
+    partial class changImgdir
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -85,20 +87,20 @@ namespace E_Commerce_Project.Migrations
                     b.HasData(
                         new
                         {
-                            ProductCode = "8fff398b-22bc-40d7-b997-25ed4b3b5d0f",
+                            ProductCode = "ca3c0b16-bb07-479f-8857-f4ff89b5ac4e",
                             CategoryId = 2,
                             Discount_Rate = 0.1m,
-                            ImgUrl = "assets/Images/PantsImg.webp",
+                            ImgUrl = "C:\\Users\\mohand\\Desktop\\E-Commerce Project\\E-commerce-Frontend\\src\\assets\\img\\PantsImg.webp",
                             Minimum_Quantity = 500,
                             Name = "pants",
                             price = 100m
                         },
                         new
                         {
-                            ProductCode = "96c01a1b-fcc2-4a57-aac0-b17834f97992",
+                            ProductCode = "ab807bab-7d17-4cef-a724-bcb11d93866d",
                             CategoryId = 1,
                             Discount_Rate = 0.2m,
-                            ImgUrl = "assets/Images/MobileImg.jpeg",
+                            ImgUrl = "C:\\Users\\mohand\\Desktop\\E-Commerce Project\\E-commerce-Frontend\\src\\assets\\img\\MobileImg.jpeg",
                             Minimum_Quantity = 1000,
                             Name = "mobile",
                             price = 4000m
@@ -312,31 +314,31 @@ namespace E_Commerce_Project.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "7163c008-d27d-4965-b88b-d77cb473f06c",
+                            Id = "e0e0e260-54c6-47c2-9d43-52d6582059a0",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "255238ee-0667-4555-abea-c8171528f09e",
+                            ConcurrencyStamp = "cd4ed2d4-5719-4784-b809-d98c99aa6884",
                             Email = "Mohandayman0127@gmail.com",
                             EmailConfirmed = false,
                             LastLoginTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEP5ai9OWWvzcrt3mdgWNi3qQMVa3iqKjuRvZOy05tS1oFrL2dvkG1E+T2pHSfK7h0Q==",
+                            PasswordHash = "AQAAAAEAACcQAAAAEBXDsAcOSN1LsEk2fg6TFJCc5z1fepNfr9eqS01EEX5Ma/nfVBzeZAk1maHp0PdJgA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "86b29b00-e3ae-4a73-abd6-ab4ebb6e14c6",
+                            SecurityStamp = "d04dd7ad-7d03-40a5-8e3a-3a2f0db80f22",
                             TwoFactorEnabled = false,
                             UserName = "MohandAyman"
                         },
                         new
                         {
-                            Id = "9a91d5a4-2cd8-46af-a26a-57ca5c877b51",
+                            Id = "25da1360-0e0d-4741-937f-a692c0019514",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "b7676117-b7ef-46c2-9d20-3f0189d650cf",
+                            ConcurrencyStamp = "8234d736-6c29-4f6f-90e2-9cb3d6a4bca4",
                             Email = "OsamaHassan@gmail.com",
                             EmailConfirmed = false,
                             LastLoginTime = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             LockoutEnabled = false,
-                            PasswordHash = "AQAAAAEAACcQAAAAEJYB7Y3JSzbm2FCjaeR3MZTvIi+0uxmb88zY/7S08BHdbkMwMBzvOtnvjzmPuxAwaA==",
+                            PasswordHash = "AQAAAAEAACcQAAAAENQgvtNc5QCTY4uWtBIdn5RFvumAc29Y73oe3WXnPHLn8vOP8RoabW3xNWZ7PHagQw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e73b28cb-a392-4b55-b532-49d0d3778dee",
+                            SecurityStamp = "ff610a25-fb48-479c-b155-7f0f34cf89b0",
                             TwoFactorEnabled = false,
                             UserName = "OsamaHassan"
                         });

@@ -24,7 +24,7 @@ namespace E_Commerce_Project.Extentions
         public static DisplayProductDto toread(this ProductModel Product)
         {
             var salexprice = Product.price * (1 - Product.Discount_Rate);
-            return new DisplayProductDto(Product.Name, Product.ImgUrl, Product.price, salexprice);
+            return new DisplayProductDto(Product.ProductCode , Product.Name, Product.ImgUrl, Product.price, salexprice);
         }
     }
 }

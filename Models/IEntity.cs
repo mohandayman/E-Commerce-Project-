@@ -12,8 +12,11 @@ namespace CommonService.DatabaseLayer.Models
     {
         public T Id { get; set; }
     }  
-    public interface Iproduct
+     public interface Iproduct
     {
         public string ProductCode { get; set; }
-    }
+    }  
+
+
+
 }
